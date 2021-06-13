@@ -22,11 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+
+# Including status OFFICIAL
+#LEGION_BUILD_TYPE := OFFICIAL
+#LEGION_MAINTAINER := answer35
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := legion_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
