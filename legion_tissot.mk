@@ -28,9 +28,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := true
 
 # Including status OFFICIAL
-#LEGION_BUILD_TYPE := OFFICIAL
-#LEGION_MAINTAINER := answer35
-#WITH_GAPPS := true
+LEGION_BUILD_TYPE := OFFICIAL
+LEGION_MAINTAINER := Answer35
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
